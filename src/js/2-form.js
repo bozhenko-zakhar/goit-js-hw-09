@@ -21,7 +21,7 @@ feedbackForm.addEventListener("submit", e => {
 
 	if (formData.email && formData.message) {
 		console.log(formData);
-		localStorage.clear();
+		localStorage.removeItem("feedback-form-state");
 		formData.email = ""
 		formData.message = "";
 		form.reset();
